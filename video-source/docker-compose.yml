@@ -1,9 +1,18 @@
 version: "3"
 
 services:
-    nginx:
+    nginx-static:
         image: nginx:latest
         ports:
             - "8080:80"
         volumes:
             - ./nginx-html:/usr/share/nginx/html
+            - ./videos:/videos
+
+    nginx-stream:
+        image: nginx:latest
+        ports:
+            - "8081:80"
+        volumes:
+            - ./html-stream:/usr/share/nginx/html
+            - ./videos:/videos

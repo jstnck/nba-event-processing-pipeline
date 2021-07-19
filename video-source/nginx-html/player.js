@@ -17,7 +17,6 @@ myVideo.addEventListener('click', vidEnded);
 
 // Vids
 
-alert("Hello! I am an alert box!!");
 
 
 const vids = ["video1.mp4", "video2.mp4", "video3.mp4"];
@@ -79,7 +78,7 @@ function nextVideo() {
     } else {
         vidPlaying = 0;
     }
-    myVideo.src = "videos/" + vids[vidPlayhing];
+    myVideo.src = "videos/" + vids[vidPlaying];
     vidNum.innerHTML = (vidPlaying+1) + `/ ${vids.length}`;
 }
 
