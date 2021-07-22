@@ -1,0 +1,161 @@
+1626904861994	geckodriver	INFO	Listening on 127.0.0.1:35849
+1626904862000	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileF4SvZl"
+Error: no DISPLAY environment variable specified
+1626904891306	geckodriver	INFO	Listening on 127.0.0.1:44575
+1626904892311	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilehN1xbY"
+Error: no DISPLAY environment variable specified
+1626906021931	geckodriver	INFO	Listening on 127.0.0.1:37147
+1626906021938	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileDQIoIG"
+[GFX1-]: glxtest: libpci missing
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libEGL missing
+1626906022722	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileDQIoIG/search.json.mozlz4", (void 0)))
+1626906024395	Marionette	INFO	Listening on port 41827
+1626906024474	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://assets.adobedtm.com/6372cf21ef88ee60bc2977a4898dcb5c7945a212/satelliteLib-5e0259aff0b35c55ae1387e43a61e5902ea0cdb6.js line 4 > Function, line 3: TypeError: s._tpDST[d.getFullYear()] is undefined
+[Child 98, MediaDecoderStateMachine #1] WARNING: 7f0c74d99e40 OpenCubeb() failed to init cubeb: file /build/firefox-v7rxi3/firefox-90.0+build1/dom/media/AudioStream.cpp:324
+[Child 98, MediaDecoderStateMachine #1] WARNING: Decoder=7f0c74d14800 [OnMediaSinkAudioError]: file /build/firefox-v7rxi3/firefox-90.0+build1/dom/media/MediaDecoderStateMachine.cpp:3941
+[Child 98, MediaDecoderStateMachine #1] WARNING: Decoder=7f0c74d14800 Decode error: NS_ERROR_DOM_MEDIA_MEDIASINK_ERR (0x806e000b) - OnMediaSinkAudioError: file /build/firefox-v7rxi3/firefox-90.0+build1/dom/media/MediaDecoderStateMachine.cpp:3502
+JavaScript error: https://cdn.cookielaw.org/scripttemplates/6.19.0/otBannerSdk.js, line 7: TypeError: r is undefined
+Gdk-Message: 22:20:30.369: firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+Gdk-Message: 22:20:30.370: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+Gdk-Message: 22:20:30.369: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+Gdk-Message: 22:20:30.370: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+1626910136375	geckodriver	INFO	Listening on 127.0.0.1:37237
+1626910136381	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiledPLppt"
+[GFX1-]: glxtest: libpci missing
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libEGL missing
+1626910137183	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofiledPLppt/search.json.mozlz4", (void 0)))
+1626910138835	Marionette	INFO	Listening on port 40413
+1626910138929	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://assets.adobedtm.com/6372cf21ef88ee60bc2977a4898dcb5c7945a212/satelliteLib-5e0259aff0b35c55ae1387e43a61e5902ea0cdb6.js line 4 > Function, line 3: TypeError: s._tpDST[d.getFullYear()] is undefined
+[Child 108, MediaDecoderStateMachine #1] WARNING: 7f7b8a2d22e0 OpenCubeb() failed to init cubeb: file /build/firefox-v7rxi3/firefox-90.0+build1/dom/media/AudioStream.cpp:324
+[Child 108, MediaDecoderStateMachine #1] WARNING: Decoder=7f7b8a8e9400 [OnMediaSinkAudioError]: file /build/firefox-v7rxi3/firefox-90.0+build1/dom/media/MediaDecoderStateMachine.cpp:3941
+[Child 108, MediaDecoderStateMachine #1] WARNING: Decoder=7f7b8a8e9400 Decode error: NS_ERROR_DOM_MEDIA_MEDIASINK_ERR (0x806e000b) - OnMediaSinkAudioError: file /build/firefox-v7rxi3/firefox-90.0+build1/dom/media/MediaDecoderStateMachine.cpp:3502
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+Gdk-Message: 23:29:15.674: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+Gdk-Message: 23:29:15.675: firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+1626910261515	geckodriver	INFO	Listening on 127.0.0.1:57761
+1626910262515	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileLIfC2H"
+[GFX1-]: glxtest: libpci missing
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libEGL missing
+1626910263309	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileLIfC2H/search.json.mozlz4", (void 0)))
+1626910264883	Marionette	INFO	Listening on port 33391
+1626910264947	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://assets.adobedtm.com/6372cf21ef88ee60bc2977a4898dcb5c7945a212/satelliteLib-5e0259aff0b35c55ae1387e43a61e5902ea0cdb6.js line 4 > Function, line 3: TypeError: s._tpDST[d.getFullYear()] is undefined
+[Child 112, MediaDecoderStateMachine #1] WARNING: 7f7b5d68cac0 OpenCubeb() failed to init cubeb: file /build/firefox-v7rxi3/firefox-90.0+build1/dom/media/AudioStream.cpp:324
+[Child 112, MediaDecoderStateMachine #1] WARNING: Decoder=7f7b5d611800 [OnMediaSinkAudioError]: file /build/firefox-v7rxi3/firefox-90.0+build1/dom/media/MediaDecoderStateMachine.cpp:3941
+[Child 112, MediaDecoderStateMachine #1] WARNING: Decoder=7f7b5d611800 Decode error: NS_ERROR_DOM_MEDIA_MEDIASINK_ERR (0x806e000b) - OnMediaSinkAudioError: file /build/firefox-v7rxi3/firefox-90.0+build1/dom/media/MediaDecoderStateMachine.cpp:3502
+JavaScript error: https://cdn.cookielaw.org/scripttemplates/6.19.0/otBannerSdk.js, line 7: TypeError: r is undefined
+Gdk-Message: 23:31:20.464: firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+Exiting due to channel error.
+1626910587741	geckodriver	INFO	Listening on 127.0.0.1:49133
+1626910588746	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilekoU8aQ"
+[GFX1-]: glxtest: libpci missing
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libEGL missing
+1626910589514	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilekoU8aQ/search.json.mozlz4", (void 0)))
+1626910591144	Marionette	INFO	Listening on port 35903
+1626910591182	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://assets.adobedtm.com/6372cf21ef88ee60bc2977a4898dcb5c7945a212/satelliteLib-5e0259aff0b35c55ae1387e43a61e5902ea0cdb6.js line 4 > Function, line 3: TypeError: s._tpDST[d.getFullYear()] is undefined
+[Child 109, MediaDecoderStateMachine #1] WARNING: 7f573db15660 OpenCubeb() failed to init cubeb: file /build/firefox-v7rxi3/firefox-90.0+build1/dom/media/AudioStream.cpp:324
+[Child 109, MediaDecoderStateMachine #1] WARNING: Decoder=7f5729cd1c00 [OnMediaSinkAudioError]: file /build/firefox-v7rxi3/firefox-90.0+build1/dom/media/MediaDecoderStateMachine.cpp:3941
+[Child 109, MediaDecoderStateMachine #1] WARNING: Decoder=7f5729cd1c00 Decode error: NS_ERROR_DOM_MEDIA_MEDIASINK_ERR (0x806e000b) - OnMediaSinkAudioError: file /build/firefox-v7rxi3/firefox-90.0+build1/dom/media/MediaDecoderStateMachine.cpp:3502
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+Gdk-Message: 23:36:47.439: firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+Gdk-Message: 23:36:47.439: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+Sandbox: Unexpected EOF, op 0 flags 02000000 path /etc/localtime
+Gdk-Message: 23:36:47.439: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+1626910958684	geckodriver	INFO	Listening on 127.0.0.1:59403
+1626910959688	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileoBDSlp"
+[GFX1-]: glxtest: libpci missing
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libEGL missing
+1626910960474	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileoBDSlp/search.json.mozlz4", (void 0)))
+1626910962293	Marionette	INFO	Listening on port 37433
+1626910962355	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://assets.adobedtm.com/6372cf21ef88ee60bc2977a4898dcb5c7945a212/satelliteLib-5e0259aff0b35c55ae1387e43a61e5902ea0cdb6.js line 4 > Function, line 3: TypeError: s._tpDST[d.getFullYear()] is undefined
+[Child 102, MediaDecoderStateMachine #1] WARNING: 7f74653982e0 OpenCubeb() failed to init cubeb: file /build/firefox-v7rxi3/firefox-90.0+build1/dom/media/AudioStream.cpp:324
+[Child 102, MediaDecoderStateMachine #1] WARNING: Decoder=7f7465321c00 [OnMediaSinkAudioError]: file /build/firefox-v7rxi3/firefox-90.0+build1/dom/media/MediaDecoderStateMachine.cpp:3941
+[Child 102, MediaDecoderStateMachine #1] WARNING: Decoder=7f7465321c00 Decode error: NS_ERROR_DOM_MEDIA_MEDIASINK_ERR (0x806e000b) - OnMediaSinkAudioError: file /build/firefox-v7rxi3/firefox-90.0+build1/dom/media/MediaDecoderStateMachine.cpp:3502
+JavaScript error: https://cdn.cookielaw.org/scripttemplates/6.19.0/otBannerSdk.js, line 7: TypeError: r is undefined
+Gdk-Message: 23:42:58.608: firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+Gdk-Message: 23:42:58.609: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+Gdk-Message: 23:42:58.609: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+1626911261300	geckodriver	INFO	Listening on 127.0.0.1:50013
+1626911262304	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileOErQor"
+[GFX1-]: glxtest: libpci missing
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libEGL missing
+1626911263090	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileOErQor/search.json.mozlz4", (void 0)))
+1626911265004	Marionette	INFO	Listening on port 36973
+1626911265055	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1626911479371	geckodriver	INFO	Listening on 127.0.0.1:47923
+1626911480376	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilehceW0V"
+[GFX1-]: glxtest: libpci missing
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libEGL missing
+1626911481165	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilehceW0V/search.json.mozlz4", (void 0)))
+1626911483068	Marionette	INFO	Listening on port 44549
+1626911483123	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:8080/player.js, line 15: ReferenceError: btnNext is not defined
+JavaScript error: , line 0: NotAllowedError: The play method is not allowed by the user agent or the platform in the current context, possibly because the user denied permission.
+JavaScript error: https://assets.adobedtm.com/6372cf21ef88ee60bc2977a4898dcb5c7945a212/satelliteLib-5e0259aff0b35c55ae1387e43a61e5902ea0cdb6.js line 4 > Function, line 3: TypeError: s._tpDST[d.getFullYear()] is undefined
+[Child 118, MediaDecoderStateMachine #1] WARNING: 7fb89f3459e0 OpenCubeb() failed to init cubeb: file /build/firefox-v7rxi3/firefox-90.0+build1/dom/media/AudioStream.cpp:324
+[Child 118, MediaDecoderStateMachine #1] WARNING: Decoder=7fb89f92cc00 [OnMediaSinkAudioError]: file /build/firefox-v7rxi3/firefox-90.0+build1/dom/media/MediaDecoderStateMachine.cpp:3941
+[Child 118, MediaDecoderStateMachine #1] WARNING: Decoder=7fb89f92cc00 Decode error: NS_ERROR_DOM_MEDIA_MEDIASINK_ERR (0x806e000b) - OnMediaSinkAudioError: file /build/firefox-v7rxi3/firefox-90.0+build1/dom/media/MediaDecoderStateMachine.cpp:3502
+JavaScript error: https://cdn.cookielaw.org/scripttemplates/6.19.0/otBannerSdk.js, line 7: TypeError: r is undefined
+Gdk-Message: 23:51:37.416: firefox: Fatal IO error 104 (Connection reset by peer) on X server :0.
+
+Exiting due to channel error.
+1626912005852	geckodriver	INFO	Listening on 127.0.0.1:57613
+1626912006857	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileVi1dOn"
+[GFX1-]: glxtest: libpci missing
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libEGL missing
+1626912007693	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileVi1dOn/search.json.mozlz4", (void 0)))
+1626912009673	Marionette	INFO	Listening on port 41409
+1626912009792	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://unpkg.com/videojs-contrib-hls/dist/videojs-contrib-hls.js, line 21591: TypeError: setting getter-only property "HlsHandler"
+JavaScript error: , line 0: NotAllowedError: The play method is not allowed by the user agent or the platform in the current context, possibly because the user denied permission.
+JavaScript error: , line 0: NotAllowedError: The play method is not allowed by the user agent or the platform in the current context, possibly because the user denied permission.
+JavaScript error: https://assets.adobedtm.com/6372cf21ef88ee60bc2977a4898dcb5c7945a212/satelliteLib-5e0259aff0b35c55ae1387e43a61e5902ea0cdb6.js line 4 > Function, line 3: TypeError: s._tpDST[d.getFullYear()] is undefined
+[Child 108, MediaDecoderStateMachine #1] WARNING: 7f714e41c580 OpenCubeb() failed to init cubeb: file /build/firefox-v7rxi3/firefox-90.0+build1/dom/media/AudioStream.cpp:324
+[Child 108, MediaDecoderStateMachine #1] WARNING: Decoder=7f714fee4400 [OnMediaSinkAudioError]: file /build/firefox-v7rxi3/firefox-90.0+build1/dom/media/MediaDecoderStateMachine.cpp:3941
+[Child 108, MediaDecoderStateMachine #1] WARNING: Decoder=7f714fee4400 Decode error: NS_ERROR_DOM_MEDIA_MEDIASINK_ERR (0x806e000b) - OnMediaSinkAudioError: file /build/firefox-v7rxi3/firefox-90.0+build1/dom/media/MediaDecoderStateMachine.cpp:3502
+JavaScript error: https://cdn.cookielaw.org/scripttemplates/6.19.0/otBannerSdk.js, line 7: TypeError: r is undefined
+JavaScript error: https://unpkg.com/videojs-contrib-hls/dist/videojs-contrib-hls.js, line 21591: TypeError: setting getter-only property "HlsHandler"
+Gdk-Message: 00:00:28.069: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+Gdk-Message: 00:00:28.072: firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+Gdk-Message: 00:00:28.068: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+Gdk-Message: 00:00:28.069: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
