@@ -18,6 +18,8 @@ RUN useradd -ms /bin/bash user
 WORKDIR /selenium
 # ADD . /selenium
 RUN mkdir /selenium/logs
+RUN mkdir /selenium/data
+
 RUN touch /selenium/logs/geckodriver.log
 
 RUN pip3 install selenium pyvirtualdisplay pillow
