@@ -4,7 +4,7 @@ services:
     nginx-static:
         image: nginx:latest
         ports:
-            - "8080:80"
+            - "8081:80"
         volumes:
             - ./nginx-html:/usr/share/nginx/html
             - ./videos:/videos
@@ -12,7 +12,7 @@ services:
     nginx-stream:
         image: nginx:latest
         ports:
-            - "8081:80"
+            - "8080:80"
         volumes:
             - ./html-stream:/usr/share/nginx/html
             - ./videos:/videos
