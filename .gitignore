@@ -1,3 +1,5 @@
 video-source/nginx-html/videos/
 video-source/videos
 video-source/html-stream/videos
+video-capture/logs/geckodriver.log
+video-capture/data/out000.mp4 video-capture/data/out001.mp4 video-capture/data/out002.mp4 video-capture/data/playlist.m3u8

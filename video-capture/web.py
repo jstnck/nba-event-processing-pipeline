@@ -1,7 +1,6 @@
 import subprocess, time
 from selenium.webdriver import Firefox
 from selenium.webdriver import Chrome
-#driver = Firefox(executable_path='./geckodriver')
 
 from pyvirtualdisplay import Display
 
@@ -9,6 +8,8 @@ from pyvirtualdisplay import Display
 disp = Display()
 disp.start()
 # display is active
+
+# display number
 print(disp.new_display_var)
 
 print("set driver")
@@ -22,17 +23,16 @@ ffmpeg_cmd = """ffmpeg -video_size 1024x768 -framerate 25 -f x11grab -t 30 -i :0
 
 ffmpeg_subprocess = [cmd for cmd in ffmpeg_cmd.split(" ")]
 
-# ffmpeg_subprocess = []
-# for s in ffmpeg_cmd.split(" "):
-#     ffmpeg_subprocess.append(s)
 
 
 
-print(ffmpeg_subprocess)
+print("before popen")
 
 
 # subprocess.run(ffmpeg_subprocess)
 subprocess.Popen(ffmpeg_subprocess)
+
+print("after popen")
 
 
 driver_path = "/selenium/geckodriver"
@@ -40,32 +40,28 @@ driver_path = "/selenium/geckodriver"
 log_path = "/selenium/logs/geckodriver.log"
 
 driver = Firefox(executable_path=driver_path, service_log_path=log_path)
-# driver = Chrome(executable_path=driver_path)
-
-
-
-
-
 
 
 print("driver.get")
 
-# driver.get("http://3.236.147.184:8080/")
-driver.get("localhost:8081/clapper.html")
+
+driver.get("http://3.236.147.184:8081")
+driver.save_screenshot("./data/screenshot1.png")
+
 
 video = driver.find_element_by_id('video')
 
+print("================================= video click ========================")
+
 video.click()
 
-time.sleep(10)
+time.sleep(15)
+
+print("================================= after sleep ========================")
 
 print(str(driver.title))
 print(str(driver.current_window_handle))
 
-driver.get("https://www.wired.com")
-
-
-driver.save_screenshot("./data/screenshot2.png")
 
 driver.back()
 
