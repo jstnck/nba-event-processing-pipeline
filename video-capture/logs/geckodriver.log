@@ -159,3 +159,47 @@ Gdk-Message: 00:00:28.068: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource
 
 Gdk-Message: 00:00:28.069: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
 
+1626917844629	geckodriver	INFO	Listening on 127.0.0.1:56911
+1626917844633	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiler5MDqO"
+[GFX1-]: glxtest: libpci missing
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libEGL missing
+1626917845260	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofiler5MDqO/search.json.mozlz4", (void 0)))
+1626917846548	Marionette	INFO	Listening on port 40235
+1626917846657	Marionette	WARN	TLS certificate errors will be ignored for this session
+1626918209859	geckodriver	INFO	Listening on 127.0.0.1:41395
+1626918209864	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileAr9gl1"
+[GFX1-]: glxtest: libpci missing
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libEGL missing
+1626918210456	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileAr9gl1/search.json.mozlz4", (void 0)))
+1626918211723	Marionette	INFO	Listening on port 39913
+1626918211790	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://unpkg.com/videojs-contrib-hls/dist/videojs-contrib-hls.js, line 21591: TypeError: setting getter-only property "HlsHandler"
+[Child 178, MediaDecoderStateMachine #1] WARNING: 7f9b3a9fef20 OpenCubeb() failed to init cubeb: file /build/firefox-v7rxi3/firefox-90.0+build1/dom/media/AudioStream.cpp:324
+[Child 178, MediaDecoderStateMachine #1] WARNING: Decoder=7f9b46f09000 [OnMediaSinkAudioError]: file /build/firefox-v7rxi3/firefox-90.0+build1/dom/media/MediaDecoderStateMachine.cpp:3941
+Gdk-Message: 01:43:48.761: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1.
+
+Gdk-Message: 01:43:48.761: firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1.
+
+Exiting due to channel error.
+1626918571354	geckodriver	INFO	Listening on 127.0.0.1:56859
+1626918571359	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileXl1myt"
+[GFX1-]: glxtest: libpci missing
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libEGL missing
+1626918571958	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileXl1myt/search.json.mozlz4", (void 0)))
+1626918573122	Marionette	INFO	Listening on port 40903
+1626918573176	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://unpkg.com/videojs-contrib-hls/dist/videojs-contrib-hls.js, line 21591: TypeError: setting getter-only property "HlsHandler"
+[Child 175, MediaDecoderStateMachine #1] WARNING: 7ff787fddac0 OpenCubeb() failed to init cubeb: file /build/firefox-v7rxi3/firefox-90.0+build1/dom/media/AudioStream.cpp:324
+[Child 175, MediaDecoderStateMachine #1] WARNING: Decoder=7ff795e06800 [OnMediaSinkAudioError]: file /build/firefox-v7rxi3/firefox-90.0+build1/dom/media/MediaDecoderStateMachine.cpp:3941
+Gdk-Message: 01:49:49.677: firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1.
+
+Gdk-Message: 01:49:49.677: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1.
+
+Exiting due to channel error.
+Exiting due to channel error.
