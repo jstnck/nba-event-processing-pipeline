@@ -3,3 +3,4 @@ video-source/videos
 video-source/html-stream/videos
 video-capture/logs/
 video-capture/data/
+video-capture/__pycache__/
