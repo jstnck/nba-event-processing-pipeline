@@ -5,3 +5,4 @@ video-capture/logs/
 video-capture/data/
 video-capture/__pycache__/
 vide-capture/logs/geckodriver.log
+capture-transform-store/transform/sample.mp4
