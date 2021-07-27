@@ -57,7 +57,7 @@ def create_frame_data(file_path: str, db_connection):
             # create the insert query structure
             record = ", ".join(["%s"] * len(data_tuple))
             insert_query = (
-                f"INSERT INTO frame_data (file_name, fps, frame_num, frame_data) VALUES {data_tuple}"
+                f"INSERT INTO frame_data (file_name, fps, frame_num, frame_array) VALUES {data_tuple}"
             )
 
             # insert single frame data into row in postgres db
