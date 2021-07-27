@@ -11,3 +11,4 @@ capture-transform-store/transform/sample_videos/
 capture-transform-store/store/docker/database-vol/
 capture-transform-store/store/docker/pgadmin-vol/
 */__pycache__/
+videos/
