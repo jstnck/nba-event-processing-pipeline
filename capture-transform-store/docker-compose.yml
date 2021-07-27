@@ -9,12 +9,16 @@ services:
             - ./videos:/videos
         environment: 
             - DISPLAY
+        depends_on:
+            - transform
 
     transform:
         build: ./transform
         container_name: transform
         volumes:
             - ./videos:/videos
+        depends_on:
+            - store
 
     store:
         build: ./store
@@ -22,7 +26,7 @@ services:
         environment: 
             POSTGRES_USER: postgres
             POSTGRES_PASSWORD: postgres
-           POSTGRES_DB: postgres
+            POSTGRES_DB: postgres
         expose:
             - 5432
             

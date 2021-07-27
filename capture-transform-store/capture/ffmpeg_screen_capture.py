@@ -5,6 +5,7 @@
 import concurrent.futures
 import subprocess, time
 from pyvirtualdisplay import Display
+from datetime import datetime
 
 
 
@@ -34,25 +35,36 @@ def capture_screen(
     video_size is screen/capture dimensions ie '1824x1026' 
     timeout in seconds. if no time out will run until program is interrupted  
     """ 
-    ffmpeg_cmd = f"""ffmpeg \
-        -video_size {capture_dimensions} \
-        -framerate {framerate} \
-        -f x11grab \
-        -t {timeout} \
-        -i {display}.0+1,1 \ 
-        -f stream_segment \
-        -segment_time {segment_time} \
-        -segment_format_options movflags=+faststart \
-        -segment_list {output_path}/playlist.m3u8 \
-        {output_path}/out%03d.mp4
-        """
+    
+    # ffmpeg_cmd = f"""ffmpeg \
+    # -video_size {capture_dimensions} \
+    # -framerate {framerate} \
+    # -f x11grab \
+    # -t {timeout} \
+    # -i {display}.0+1,1 \ 
+    # -f stream_segment \
+    # -segment_time {segment_time} \
+    # -segment_format_options movflags=+faststart \
+    # -segment_list {output_path}/playlist.m3u8 \
+    # {output_path}/out%03d.mp4
+    # """
+    
+    now = datetime.now()
+    ts = datetime.timestamp(now)
 
-    print(ffmpeg_cmd)
+    ffmpeg_cmd = f"ffmpeg -video_size {capture_dimensions} -framerate {framerate} -f x11grab -t {timeout} -i {display}.0+1,1 -f stream_segment -segment_time {segment_time} -segment_format_options movflags=+faststart -segment_list {output_path}/playlist.m3u8 {output_path}/out%04d_{ts}.mp4"
+    
+    # logging.info(ffmpeg_cmd)
     p1 = subprocess.run(ffmpeg_cmd, shell=True, capture_output=True, text=True)
 
     return p1.returncode
 
 
+if __name__ == "__main__":
+
+    res = capture_screen(display=":0", capture_dimensions="1824x1026", framerate=10, timeout=25, segment_time=8, output_path=".")
+
+    print(res)
 
 """
 NOTES

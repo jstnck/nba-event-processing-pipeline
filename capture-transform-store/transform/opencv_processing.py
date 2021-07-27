@@ -2,6 +2,7 @@ import cv2, json
 import numpy as np
 from numpy_array_encoder import NumpyArrayEncoder
 import db
+import logging
 
 import os
 
@@ -12,15 +13,20 @@ def create_frame_data(file_path: str, db_connection):
 
     file_info = file_path.split("/")
     file_name = file_info[-1]
+    print(f"file info: {file_info}")
+    print(f"file name: {file_name}")
+    print(f"file path: {file_path}")
+
+    print(f'file size before opencv {os.path.getsize(file_path)}')
 
     cap = cv2.VideoCapture(file_path)
 
     # frames per second 
     fps = cap.get(cv2.CAP_PROP_FPS)
-    print(f"fps: {fps}")
+    logging.info(f"fps: {fps}")
 
     total_frame_count= int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
-    print(f"total frame count: {total_frame_count}")
+    logging.info(f"total frame count: {total_frame_count}")
 
     frame_count = 0
     # process one out of every n frames - skip a %age of frames for performance improvements
@@ -55,13 +61,18 @@ def create_frame_data(file_path: str, db_connection):
             )
 
             # insert single frame data into row in postgres db
+            
             db.insert_query(db_connection, insert_query, record)
-            print(f"frame {frame_count} inserted successfully")
+            # res = db.insert_query_v(db_connection, insert_query, record)
+
+            # logging.info()
+
 
     return "video processed and frame data added to database"
 
 
-file_name = "./sample.mp4"
+test_file_name = "./sample_videos/sample.mp4"
 if __name__ == "__main__":
+    print('called main')
 
-    create_frame_data(file_name)
+    create_frame_data(test_file_name, 'dbconn')

@@ -17,7 +17,7 @@ def start_video(url):
         # start the video by clicking on it
         # TODO -what if its autoplay and clicking it pauses the video?
         video.click()
-        driver.save_screenshot("./data/after-click.png")
+        # driver.save_screenshot("./data/after-click.png")
     except:
         pass
 

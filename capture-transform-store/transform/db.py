@@ -56,6 +56,16 @@ def insert_query(connection, query, records):
     except OperationalError as e:
         print(f"The error '{e}' has occurred.")
 
+# def insert_query_v(connection, query, records):
+#     connection.autocommit = True
+#     cursor = connection.cursor()
+    
+#     try:
+#         cursor.execute(query, records)
+#         return("insert executed successfully")
+#     except OperationalError as e:
+#         return(f"The error '{e}' has occurred.")
+
 def execute_read_query(connection, query):
     cursor = connection.cursor()
     result = None
