@@ -6,3 +6,7 @@ video-capture/data/
 video-capture/__pycache__/
 vide-capture/logs/geckodriver.log
 capture-transform-store/transform/sample.mp4
+capture-transform-store/transform/__pycache__/db.cpython-38.pyc capture-transform-store/transform/__pycache__/numpy_array_encoder.cpython-38.pyc capture-transform-store/transform/__pycache__/opencv_processing.cpython-38.pyc
+capture-transform-store/transform/sample_videos/
+capture-transform-store/store/docker/database-vol/
+capture-transform-store/store/docker/pgadmin-vol/
