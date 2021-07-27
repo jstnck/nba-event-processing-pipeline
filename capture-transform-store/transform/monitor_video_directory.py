@@ -1,4 +1,3 @@
-
 import time, json, os
 from watchdog.observers import Observer
 from watchdog.events import PatternMatchingEventHandler
@@ -8,7 +7,7 @@ import db
 
 # create connection to the postgres container
 db_name = "postgres"
-host_ip = "172.16.57.3"
+host_ip = "store"
 connection = db.create_connection(db_name=db_name, db_host=host_ip)
 
 # monitor the /videos folder for new mp4 files being added by the capture application

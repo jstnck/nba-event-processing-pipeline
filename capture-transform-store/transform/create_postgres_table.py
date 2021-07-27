@@ -2,7 +2,7 @@ import db
 
 
 db_name = "postgres"
-host_ip = "172.16.57.3"
+host_ip = "store"
 
 # can use docker inspect to get postgres container ip address
 
@@ -31,3 +31,5 @@ DROP TABLE IF EXISTS frame_data
 
 db.execute_query(connection, drop_table_string)
 db.execute_query(connection, create_table_string)
+
+print('frame_data table created')

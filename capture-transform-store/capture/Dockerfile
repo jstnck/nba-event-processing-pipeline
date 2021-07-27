@@ -16,7 +16,7 @@ RUN apt-get install -y \
 
 RUN useradd -ms /bin/bash user
 WORKDIR /selenium
-# ADD . /selenium
+ADD . /selenium
 RUN mkdir /selenium/logs
 RUN mkdir /selenium/data
 
@@ -30,5 +30,5 @@ RUN chmod 755 /selenium
 USER user
 # RUN cd /selenium
 
-CMD ["./error.py"]
+CMD ["start.py"]
 ENTRYPOINT ["python3"]

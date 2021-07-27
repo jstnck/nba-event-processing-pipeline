@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+    capture:
+        build: ./capture
+        container_name: capture
+        volumes:
+            - ./capture:/capture
+            - ./videos:/videos
+        environment: 
+            - DISPLAY
+
+    transform:
+        build: ./transform
+        container_name: transform
+        volumes:
+            - ./videos:/videos
+
+    store:
+        build: ./store
+        container_name: store
+        environment: 
+            POSTGRES_USER: postgres
+            POSTGRES_PASSWORD: postgres
+           POSTGRES_DB: postgres
+        expose:
+            - 5432
+            
+networks:
+    default:
+        driver: bridge

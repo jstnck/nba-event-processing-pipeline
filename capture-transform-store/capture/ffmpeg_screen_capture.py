@@ -27,13 +27,26 @@ def create_virtual_display(width: int = 1920, height: int = 1080):
     return virtual_display, capture_dimensions, display_number
 
 
-def capture_screen( display: str, capture_dimensions: str, timeout: int=0, framerate: int=20 ):
+def capture_screen( 
+    display: str, capture_dimensions: str, timeout: int=0, framerate: int=20, segment_time: int=10, output_path: str="/videos" ):
     """ calls a subprocess that runs ffmpeg. ffmpeg will capture the output of the display and save in video segments
     display = display number,  ie ':0'
     video_size is screen/capture dimensions ie '1824x1026' 
     timeout in seconds. if no time out will run until program is interrupted  
     """ 
-    ffmpeg_cmd = f"ffmpeg -video_size {capture_dimensions} -framerate 20 -f x11grab -t {timeout} -i {display}.0+1,1 -f stream_segment -segment_time 10 -segment_format_options movflags=+faststart  -segment_list ./data/playlist.m3u8 ./data/out%03d.mp4"
+    ffmpeg_cmd = f"""ffmpeg \
+        -video_size {capture_dimensions} \
+        -framerate {framerate} \
+        -f x11grab \
+        -t {timeout} \
+        -i {display}.0+1,1 \ 
+        -f stream_segment \
+        -segment_time {segment_time} \
+        -segment_format_options movflags=+faststart \
+        -segment_list {output_path}/playlist.m3u8 \
+        {output_path}/out%03d.mp4
+        """
+
     print(ffmpeg_cmd)
     p1 = subprocess.run(ffmpeg_cmd, shell=True, capture_output=True, text=True)
 
