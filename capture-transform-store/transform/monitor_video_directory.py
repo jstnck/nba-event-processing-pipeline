@@ -15,7 +15,12 @@ logging.info('This will get logged to a file')
 # create connection to the postgres container
 db_name = "postgres"
 host_ip = "store"
-connection = db.create_connection(db_name=db_name, db_host=host_ip)
+
+# wait to successfully connect to postgres
+connection = None
+while connection is None:
+    connection = db.create_connection(db_name=db_name, db_host=host_ip)
+    time.sleep(1)
 
 # monitor the /videos folder for new mp4 files being added by the capture application
 patterns = ["*.mp4"]
