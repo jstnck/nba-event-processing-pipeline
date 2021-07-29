@@ -6,20 +6,20 @@ def start_video(url):
         
     # create selenium webdriver
     driver_path = "/capture/geckodriver"
-    # log_path = "/capture/logs/geckodriver.log"
     driver = Firefox(executable_path=driver_path)
 
-    driver.get(url)
+    driver.maximize_window()
 
+    driver.get(url)
+    # driver.save_screenshot("./pageload.png")
     try:
         video = driver.find_element_by_id('video')
 
         # start the video by clicking on it
         # TODO -what if its autoplay and clicking it pauses the video?
         video.click()
-        # driver.save_screenshot("./data/after-click.png")
+        # driver.save_screenshot("./after-click.png")
     except:
         pass
 
     return "video started"
-
