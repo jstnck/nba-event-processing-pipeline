@@ -13,3 +13,4 @@ capture-transform-store/store/docker/pgadmin-vol/
 */__pycache__/
 videos/
 capture-transform-store/transform/__pycache__/opencv_processing.cpython-38.pyc
+capture-transform-store/capture/geckodriver.log

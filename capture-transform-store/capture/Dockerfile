@@ -15,20 +15,20 @@ RUN apt-get install -y \
     # libxcb
 
 RUN useradd -ms /bin/bash user
-WORKDIR /selenium
-ADD . /selenium
-RUN mkdir /selenium/logs
-RUN mkdir /selenium/data
+WORKDIR /capture
+ADD . /capture
+RUN mkdir /capture/logs
+RUN mkdir /capture/data
 
-RUN touch /selenium/logs/geckodriver.log
+RUN touch /capture/logs/geckodriver.log
 
 RUN pip3 install selenium pyvirtualdisplay pillow
 
-RUN chown -R user:user /selenium
-RUN chmod 755 /selenium
+RUN chown -R user:user /capture
+RUN chmod 755 /capture
 
 USER user
-# RUN cd /selenium
+# RUN cd /capture
 
 CMD ["start.py"]
 ENTRYPOINT ["python3"]

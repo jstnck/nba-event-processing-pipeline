@@ -5,9 +5,9 @@ def start_video(url):
     """ loads the url, finds the video player, and clicks on it to start playing. """
         
     # create selenium webdriver
-    driver_path = "/selenium/geckodriver"
-    log_path = "/selenium/logs/geckodriver.log"
-    driver = Firefox(executable_path=driver_path, service_log_path=log_path)
+    driver_path = "/capture/geckodriver"
+    # log_path = "/capture/logs/geckodriver.log"
+    driver = Firefox(executable_path=driver_path)
 
     driver.get(url)
 

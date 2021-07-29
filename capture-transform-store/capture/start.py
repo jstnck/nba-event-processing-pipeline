@@ -4,10 +4,14 @@
 import time, concurrent.futures
 import selenium_video
 import ffmpeg_screen_capture 
+import subprocess
+
+
+subprocess.run(["touch", "/videos/testfile"])
 
 
 # transform needs to be set up first
-time.sleep(10)
+time.sleep(5)
 
 # create and start virtual display
 virtual_display, capture_dimensions, display_number = ffmpeg_screen_capture.create_virtual_display()
@@ -25,6 +29,7 @@ selenium_video.start_video(source_url)
 with concurrent.futures.ThreadPoolExecutor() as executor:
     
     f1 = executor.submit(ffmpeg_screen_capture.capture_screen, display=display_number, capture_dimensions=capture_dimensions, timeout=capture_time)
+    # f1 = executor.submit(ffmpeg_screen_capture.capture_screen, display=display_number, capture_dimensions=capture_dimensions, timeout=capture_time, output_path="./")
     f2 = executor.submit(selenium_video.start_video, source_url)    
     # f2 = executor.submit(wait_test, 5)
     print(f1.result())

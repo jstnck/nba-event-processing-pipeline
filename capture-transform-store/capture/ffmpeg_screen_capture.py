@@ -54,6 +54,7 @@ def capture_screen(
 
     ffmpeg_cmd = f"ffmpeg -video_size {capture_dimensions} -framerate {framerate} -f x11grab -t {timeout} -i {display}.0+1,1 -f stream_segment -segment_time {segment_time} -segment_format_options movflags=+faststart -segment_list {output_path}/playlist.m3u8 {output_path}/out%04d_{ts}.mp4"
     
+    print(ffmpeg_cmd)
     # logging.info(ffmpeg_cmd)
     p1 = subprocess.run(ffmpeg_cmd, shell=True, capture_output=True, text=True)
 
@@ -62,9 +63,14 @@ def capture_screen(
 
 if __name__ == "__main__":
 
-    res = capture_screen(display=":0", capture_dimensions="1824x1026", framerate=10, timeout=25, segment_time=8, output_path=".")
+    virtual_display, capture_dimensions, display_number = create_virtual_display()
+
+
+    res = capture_screen(display=display_number, capture_dimensions=capture_dimensions, framerate=10, timeout=25, segment_time=8, output_path=".")
 
     print(res)
+
+    virtual_display.stop()
 
 """
 NOTES
