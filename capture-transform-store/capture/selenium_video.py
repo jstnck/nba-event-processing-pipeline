@@ -23,4 +23,3 @@ def start_video(url):
         pass
 
     return "video started"
-
