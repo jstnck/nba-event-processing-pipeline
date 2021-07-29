@@ -50,7 +50,6 @@ def on_created(event):
 
     logging.info(f'file size after wait {os.path.getsize(event.src_path)}')
 
-    logging.info(f'called on created - done waiting')
 
     # call opencv to create frame metadata and save to postgres db
     create_frame_data(event.src_path, connection)
