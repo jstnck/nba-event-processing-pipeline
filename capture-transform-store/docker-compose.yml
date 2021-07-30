@@ -1,16 +1,16 @@
 version: '3'
 
 services:
-    capture:
-        build: ./capture
-        container_name: capture
-        volumes:
-            - ./capture:/capture
-            - ./videos:/videos
-        environment: 
-            - DISPLAY
-        depends_on:
-            - transform
+    # capture:
+    #     build: ./capture
+    #     container_name: capture
+    #     volumes:
+    #         - ./capture:/capture
+    #         - ./videos:/videos
+    #     environment: 
+    #         - DISPLAY
+    #     depends_on:
+    #         - transform
 
     transform:
         build: ./transform
@@ -24,12 +24,12 @@ services:
         build: ./store
         container_name: store
         environment: 
-            POSTGRES_USER: postgres
-            POSTGRES_PASSWORD: postgres
-            POSTGRES_DB: postgres
+            MYSQL_ROOT_PASSWORD: debezium
+            MYSQL_USER: mysqluser
+            MYSQL_PASSWORD: mysqlpw
         ports:
-            - 5432:5432
-            
+            - 3306:3306
+
     zookeeper:
         image: debezium/zookeeper:1.6
         container_name: zookeeper
@@ -57,9 +57,9 @@ services:
             - 8083:8083
         environment:
             GROUP_ID: 1
-            CONFIG_STORAGE_TOPIC: my_connect_configs
-            OFFSET_STORAGE_TOPIC: my_connect_offsets
-            STATUS_STORAGE_TOPIC: my_connect_statuses
+            CONFIG_STORAGE_TOPIC: my_connect_configs1
+            OFFSET_STORAGE_TOPIC: my_connect_offsets1
+            STATUS_STORAGE_TOPIC: my_connect_statuses1
             BOOTSTRAP_SERVERS: kafka:9092
         depends_on:
             - kafka

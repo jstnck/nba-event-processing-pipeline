@@ -120,3 +120,43 @@ Gdk-Message: 02:57:19.601: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource
 
 Gdk-Message: 02:57:19.626: firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
 
+1627654892812	geckodriver	INFO	Listening on 127.0.0.1:33203
+1627654892818	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileTQIvcg"
+[GFX1-]: glxtest: libpci missing
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libEGL missing
+1627654893593	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileTQIvcg/search.json.mozlz4", (void 0)))
+1627654895668	Marionette	INFO	Listening on port 38987
+1627654895770	Marionette	WARN	TLS certificate errors will be ignored for this session
+1627654900810	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:237:19
+TimedPromise@chrome://marionette/content/sync.js:222:10
+GeckoDriver.prototype.maximizeWindow@chrome://marionette/content/driver.js:2458:11
+1627654901491	geckodriver	INFO	Listening on 127.0.0.1:54071
+1627654902495	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilezuxJSe"
+[GFX1-]: glxtest: libpci missing
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libEGL missing
+1627654902900	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilezuxJSe/search.json.mozlz4", (void 0)))
+1627654904535	Marionette	INFO	Listening on port 40943
+1627654904625	Marionette	WARN	TLS certificate errors will be ignored for this session
+1627654909664	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:237:19
+TimedPromise@chrome://marionette/content/sync.js:222:10
+GeckoDriver.prototype.maximizeWindow@chrome://marionette/content/driver.js:2458:11
+Gdk-Message: 14:21:50.115: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+Gdk-Message: 14:21:50.116: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+Gdk-Message: 14:21:50.116: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+Gdk-Message: 14:21:50.117: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+Gdk-Message: 14:21:50.117: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+Gdk-Message: 14:21:50.117: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+Gdk-Message: 14:21:50.118: firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+

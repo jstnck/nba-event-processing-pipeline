@@ -1,2 +1,2 @@
-FROM debezium/example-postgres
-COPY ./init.sql /docker-entrypoint-initdb.d/
+FROM debezium/example-mysql:1.5
+COPY ./mysql-init.sql /docker-entrypoint-initdb.d/
