@@ -9,19 +9,23 @@ import logging
 logging.basicConfig(level=logging.DEBUG, filename='app.log', filemode='w', format='%(name)s - %(levelname)s - %(message)s')
 logging.info('This will get logged to a file')
 
-# need the database to be initalized before we can create a connection
-# time.sleep(15)
 
-# create connection to the postgres container
-db_name = "postgres"
+# create connection to the mysql containeR
 host_ip = "store"
+db_user = os.environ["MYSQL_USER"]
+db_password = os.environ["MYSQL_PASSWORD"]
+db_root_password = os.environ["MYSQL_ROOT_PASSWORD"]
+db_table = "wcd.frame_data"
 
-# wait to successfully connect to postgres
+# wait to successfully connect to mysql
 connection = None
 while connection is None:
-    connection = db.create_connection(db_name=db_name, db_host=host_ip)
+    # connection = db.create_connection(db_host=host_ip, db_user="root", db_password=db_root_password)
+    connection = db.create_connection(db_host=host_ip, db_user=db_user, db_password=db_password)
     time.sleep(1)
 
+logging.info("conn info")
+logging.info(connection)
 # monitor the /videos folder for new mp4 files being added by the capture application
 patterns = ["*.mp4"]
 my_event_handler = PatternMatchingEventHandler(patterns)
@@ -52,7 +56,7 @@ def on_created(event):
 
 
     # call opencv to create frame metadata and save to postgres db
-    create_frame_data(event.src_path, connection)
+    create_frame_data(event.src_path, connection, db_table)
 
 
 # configure file creation event handler

@@ -6,7 +6,7 @@ import logging
 
 import os
 
-def create_frame_data(file_path: str, db_connection):
+def create_frame_data(file_path: str, connection, table: str):
     """ inputs an mp4 video file, creates a opencv VideoCapture object, 
     loops through each frame, converts to a grayscale array, saves frame
     metadata and array data to postgres database """
@@ -57,12 +57,11 @@ def create_frame_data(file_path: str, db_connection):
             # create the insert query structure
             record = ", ".join(["%s"] * len(data_tuple))
             insert_query = (
-                f"INSERT INTO frame_data (file_name, fps, frame_num, frame_array) VALUES {data_tuple}"
+                f"INSERT INTO {table} (file_name, fps, frame_num, frame_array) VALUES {data_tuple}"
             )
 
             # insert single frame data into row in postgres db
-            
-            db.insert_query(db_connection, insert_query, record)
+            db.insert_query(connection, insert_query, record)
             # res = db.insert_query_v(db_connection, insert_query, record)
 
             # logging.info()
@@ -71,8 +70,10 @@ def create_frame_data(file_path: str, db_connection):
     return "video processed and frame data added to database"
 
 
-test_file_name = "./sample_videos/sample.mp4"
+
+
 if __name__ == "__main__":
     print('called main')
+    test_file_name = "./sample_videos/sample.mp4"
 
     create_frame_data(test_file_name, 'dbconn')
