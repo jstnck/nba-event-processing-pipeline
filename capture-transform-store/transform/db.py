@@ -27,6 +27,7 @@ def insert_query(connection, query):
         cursor = connection.cursor()
         cursor.execute(query)
         connection.commit()
+        logging.info('row inserted successfully')
     except mysql.Error as e:
         logging.info(f'an error occurred at row insert: {e}')
         return (e)

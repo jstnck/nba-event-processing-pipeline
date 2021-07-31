@@ -52,13 +52,16 @@ def capture_screen(
     now = datetime.now()
     ts = datetime.timestamp(now)
 
-    ffmpeg_cmd = f"ffmpeg -video_size {capture_dimensions} -framerate {framerate} -f x11grab -t {timeout} -i {display}.0+1,1 -f stream_segment -segment_time {segment_time} -segment_format_options movflags=+faststart -segment_list {output_path}/playlist.m3u8 {output_path}/out%04d_{ts}.mp4"
-    
+    # ffmpeg_cmd = f"ffmpeg -video_size {capture_dimensions} -framerate {framerate} -f x11grab -t {timeout} -i {display}.0+1,1 -f stream_segment -segment_time {segment_time} -segment_format_options movflags=+faststart -segment_list {output_path}/playlist.m3u8 {output_path}/out%04d_{ts}.mp4"
+    ffmpeg_cmd = f"ffmpeg -video_size {capture_dimensions} -framerate {framerate} -f x11grab -t {timeout} -i {display}.0+1,1 -f stream_segment -segment_time {segment_time} -segment_format_options movflags=+faststart {output_path}/out%04d_{ts}.mp4 -loglevel debug"
+
     print(ffmpeg_cmd)
     # logging.info(ffmpeg_cmd)
-    p1 = subprocess.run(ffmpeg_cmd, shell=True, capture_output=True, text=True)
-
-    return p1.returncode
+    # p1 = subprocess.run(ffmpeg_cmd, shell=True, capture_output=True, text=True)
+    print(subprocess.run(ffmpeg_cmd, shell=True, capture_output=True, text=True))
+    
+    return 
+    # return p1.returncode
 
 
 if __name__ == "__main__":

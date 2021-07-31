@@ -11,14 +11,14 @@ def start_video(url):
     driver.maximize_window()
 
     driver.get(url)
-    # driver.save_screenshot("./pageload.png")
+    driver.save_screenshot("/capture/pageload.png")
     try:
         video = driver.find_element_by_id('video')
 
         # start the video by clicking on it
         # TODO -what if its autoplay and clicking it pauses the video?
         video.click()
-        # driver.save_screenshot("./after-click.png")
+        driver.save_screenshot("/capture/after-click.png")
     except:
         pass
 
