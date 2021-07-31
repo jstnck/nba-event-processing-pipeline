@@ -15,3 +15,8 @@ videos/
 capture-transform-store/transform/__pycache__/opencv_processing.cpython-38.pyc
 capture-transform-store/capture/geckodriver.log
 capture-transform-store/capture/__pycache__/
+spark-streaming/run/jars/
+spark-streaming/build/target/
+spark-streaming/*.class
+spark-streaming/*export
+spark-streaming/*.cache
