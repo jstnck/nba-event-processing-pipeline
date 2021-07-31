@@ -22,8 +22,8 @@ CREATE TABLE frame_data (
   frame_num INT,
   frame_array JSON
 );
-ALTER TABLE frame_data AUTO_INCREMENT = 101;
+ALTER TABLE frame_data AUTO_INCREMENT = 1001;
 
-INSERT INTO frame_data
-VALUES (default,"testrow2",20,1,'{"key1": "value1"}');
+-- INSERT INTO frame_data
+-- VALUES (default,"testrow2",20,1,'{"key1": "value1"}');
 

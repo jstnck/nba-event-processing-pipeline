@@ -7,7 +7,7 @@ RUN apt-get install -y \
 WORKDIR /transform
 ADD . /transform
 
-RUN pip3 install watchdog opencv-python mysql.connector
+RUN pip3 install watchdog opencv-python mysql-connector-python
 
 
 CMD ["monitor_video_directory.py"]

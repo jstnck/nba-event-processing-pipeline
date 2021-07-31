@@ -71,20 +71,6 @@ docker run -it --rm --name store -p 5432:5432 -e POSTGRES_USER=postgres -e POSTG
 
 
 
-{
-	"name": "pg-connector",
-	"config": {
-		"connector.class": "io.debezium.connector.postgresql.PostgresConnector",
-		"database.hostname": "store",
-		"database.port": "5432",
-		"database.user": "postgres",
-		"database.password": "postgres",
-		"database.server.name": "postgres",
-		"database.include.list": "postgres",
-		"database.history.kafka.bootstrap.servers": "kafka:9092",
-		"database.history.kafka.topic": "dbhistory.postgres"
-	}
-}
 
 postgres
 

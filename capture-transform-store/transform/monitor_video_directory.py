@@ -12,20 +12,19 @@ logging.info('This will get logged to a file')
 
 # create connection to the mysql containeR
 host_ip = "store"
-db_user = os.environ["MYSQL_USER"]
+db_user = "root"
 db_password = os.environ["MYSQL_PASSWORD"]
 db_root_password = os.environ["MYSQL_ROOT_PASSWORD"]
 db_table = "wcd.frame_data"
 
 # wait to successfully connect to mysql
+time.sleep(15)
 connection = None
 while connection is None:
-    # connection = db.create_connection(db_host=host_ip, db_user="root", db_password=db_root_password)
-    connection = db.create_connection(db_host=host_ip, db_user=db_user, db_password=db_password)
+    connection = db.create_connection(db_host=host_ip, db_user=db_user, db_password=db_root_password)
     time.sleep(1)
 
-logging.info("conn info")
-logging.info(connection)
+
 # monitor the /videos folder for new mp4 files being added by the capture application
 patterns = ["*.mp4"]
 my_event_handler = PatternMatchingEventHandler(patterns)
@@ -34,11 +33,9 @@ my_event_handler = PatternMatchingEventHandler(patterns)
 def on_created(event):
     """ when a video file arrives in the shared volume, this function is called """
 
-    # time.sleep(15)
-    logging.info(f'called on created - {event.src_path}')
     logging.info(f'file size before wait {os.path.getsize(event.src_path)}')
     # the watchdog detects the new file creation, before the file is finished copying, which means opencv
-    # tries to read a corrupt file. check every 100ms to see if the filesize has stopped increasing
+    # tries to read a corrupt file. check every 250ms to see if the filesize has stopped increasing
     historical_file_size = -1
 
     # wait for file to start growing    
