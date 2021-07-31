@@ -160,3 +160,406 @@ Gdk-Message: 14:21:50.117: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource
 
 Gdk-Message: 14:21:50.118: firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
 
+1627720231370	geckodriver	INFO	Listening on 127.0.0.1:54611
+1627720231375	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilerxaXmp"
+[GFX1-]: glxtest: libpci missing
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libEGL missing
+1627720232095	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilerxaXmp/search.json.mozlz4", (void 0)))
+1627720233380	Marionette	INFO	Listening on port 35521
+1627720233511	Marionette	WARN	TLS certificate errors will be ignored for this session
+1627720238528	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:237:19
+TimedPromise@chrome://marionette/content/sync.js:222:10
+GeckoDriver.prototype.maximizeWindow@chrome://marionette/content/driver.js:2458:11
+1627720239010	geckodriver	INFO	Listening on 127.0.0.1:51879
+1627720240014	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilekVyFAG"
+[GFX1-]: glxtest: libpci missing
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libEGL missing
+1627720240419	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilekVyFAG/search.json.mozlz4", (void 0)))
+1627720242130	Marionette	INFO	Listening on port 37443
+1627720242159	Marionette	WARN	TLS certificate errors will be ignored for this session
+1627720247196	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:237:19
+TimedPromise@chrome://marionette/content/sync.js:222:10
+GeckoDriver.prototype.maximizeWindow@chrome://marionette/content/driver.js:2458:11
+Gdk-Message: 08:30:47.566: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1.
+
+Gdk-Message: 08:30:47.567: firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1.
+
+Gdk-Message: 08:30:47.568: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1.
+
+Gdk-Message: 08:30:47.568: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1.
+
+Gdk-Message: 08:30:47.570: firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1.
+
+Sandbox: Unexpected EOF, op 0 flags 02000000 path /etc/localtime
+Sandbox: Unexpected EOF, op 0 flags 02000000 path /etc/localtime
+Gdk-Message: 08:30:47.568: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1.
+
+Gdk-Message: 08:30:47.568: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1.
+
+Exiting due to channel error.
+1627720522636	geckodriver	INFO	Listening on 127.0.0.1:59469
+1627720522641	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileOkuWys"
+[GFX1-]: glxtest: libpci missing
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libEGL missing
+1627720523365	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileOkuWys/search.json.mozlz4", (void 0)))
+1627720524765	Marionette	INFO	Listening on port 35299
+1627720524866	Marionette	WARN	TLS certificate errors will be ignored for this session
+1627720529898	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:237:19
+TimedPromise@chrome://marionette/content/sync.js:222:10
+GeckoDriver.prototype.maximizeWindow@chrome://marionette/content/driver.js:2458:11
+1627720530257	geckodriver	INFO	Listening on 127.0.0.1:54879
+1627720531262	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileXA7RZh"
+[GFX1-]: glxtest: libpci missing
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libEGL missing
+1627720531647	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileXA7RZh/search.json.mozlz4", (void 0)))
+1627720533410	Marionette	INFO	Listening on port 41725
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390099,name=PContent::Msg_InitBackground) Channel closing: too late to send/recv, messages will be lost
+
+[Child 412, Main Thread] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox-v7rxi3/firefox-90.0+build1/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc:19
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390099,name=PContent::Msg_InitBackground) Channel closing: too late to send/recv, messages will be lost
+
+[Child 412, Main Thread] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox-v7rxi3/firefox-90.0+build1/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc:19
+1627720533507	Marionette	WARN	TLS certificate errors will be ignored for this session
+1627720538548	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:237:19
+TimedPromise@chrome://marionette/content/sync.js:222:10
+GeckoDriver.prototype.maximizeWindow@chrome://marionette/content/driver.js:2458:11
+1627720566458	geckodriver	INFO	Listening on 127.0.0.1:50941
+1627720566464	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile7dwfzF"
+[GFX1-]: glxtest: libpci missing
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libEGL missing
+1627720567172	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile7dwfzF/search.json.mozlz4", (void 0)))
+1627720568544	Marionette	INFO	Listening on port 33179
+1627720568595	Marionette	WARN	TLS certificate errors will be ignored for this session
+1627720573638	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:237:19
+TimedPromise@chrome://marionette/content/sync.js:222:10
+GeckoDriver.prototype.maximizeWindow@chrome://marionette/content/driver.js:2458:11
+1627720574217	geckodriver	INFO	Listening on 127.0.0.1:42805
+1627720575222	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilecnwbES"
+[GFX1-]: glxtest: libpci missing
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libEGL missing
+1627720575623	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilecnwbES/search.json.mozlz4", (void 0)))
+1627720577129	Marionette	INFO	Listening on port 46395
+1627720577249	Marionette	WARN	TLS certificate errors will be ignored for this session
+1627720582291	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:237:19
+TimedPromise@chrome://marionette/content/sync.js:222:10
+GeckoDriver.prototype.maximizeWindow@chrome://marionette/content/driver.js:2458:11
+Gdk-Message: 08:36:22.603: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1.
+
+Gdk-Message: 08:36:22.604: firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1.
+
+Gdk-Message: 08:36:22.606: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1.
+
+Gdk-Message: 08:36:22.606: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1.
+
+Exiting due to channel error.
+Exiting due to channel error.
+Sandbox: Unexpected EOF, op 2 flags 00 path /etc/localtime
+Gdk-Message: 08:36:22.610: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1.
+
+1627720677775	geckodriver	INFO	Listening on 127.0.0.1:50647
+1627720677780	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileWdTFRR"
+[GFX1-]: glxtest: libpci missing
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libEGL missing
+1627720678495	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileWdTFRR/search.json.mozlz4", (void 0)))
+1627720679797	Marionette	INFO	Listening on port 38859
+1627720679912	Marionette	WARN	TLS certificate errors will be ignored for this session
+1627720684943	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:237:19
+TimedPromise@chrome://marionette/content/sync.js:222:10
+GeckoDriver.prototype.maximizeWindow@chrome://marionette/content/driver.js:2458:11
+1627720685307	geckodriver	INFO	Listening on 127.0.0.1:40145
+1627720686312	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileXxNhN1"
+[GFX1-]: glxtest: libpci missing
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libEGL missing
+1627720686722	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileXxNhN1/search.json.mozlz4", (void 0)))
+1627720688421	Marionette	INFO	Listening on port 41947
+1627720688547	Marionette	WARN	TLS certificate errors will be ignored for this session
+1627720693580	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:237:19
+TimedPromise@chrome://marionette/content/sync.js:222:10
+GeckoDriver.prototype.maximizeWindow@chrome://marionette/content/driver.js:2458:11
+Gdk-Message: 08:38:14.029: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1.
+
+Gdk-Message: 08:38:14.029: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1.
+
+Gdk-Message: 08:38:14.031: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1.
+
+Gdk-Message: 08:38:14.031: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1.
+
+Gdk-Message: 08:38:14.032: firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1.
+
+Gdk-Message: 08:38:14.029: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1.
+
+Gdk-Message: 08:38:14.033: firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1.
+
+Exiting due to channel error.
+1627720781887	geckodriver	INFO	Listening on 127.0.0.1:39001
+1627720781892	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile5plgzW"
+[GFX1-]: glxtest: libpci missing
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libEGL missing
+1627720782610	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile5plgzW/search.json.mozlz4", (void 0)))
+1627720783988	Marionette	INFO	Listening on port 45881
+1627720784019	Marionette	WARN	TLS certificate errors will be ignored for this session
+1627720789051	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:237:19
+TimedPromise@chrome://marionette/content/sync.js:222:10
+GeckoDriver.prototype.maximizeWindow@chrome://marionette/content/driver.js:2458:11
+1627720789523	geckodriver	INFO	Listening on 127.0.0.1:40463
+1627720790527	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilek0zrWq"
+[GFX1-]: glxtest: libpci missing
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libEGL missing
+1627720790942	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilek0zrWq/search.json.mozlz4", (void 0)))
+1627720792467	Marionette	INFO	Listening on port 45823
+1627720792555	Marionette	WARN	TLS certificate errors will be ignored for this session
+1627720797588	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:237:19
+TimedPromise@chrome://marionette/content/sync.js:222:10
+GeckoDriver.prototype.maximizeWindow@chrome://marionette/content/driver.js:2458:11
+Gdk-Message: 08:39:58.012: firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1.
+
+Gdk-Message: 08:39:58.016: firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1.
+
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1627720916081	geckodriver	INFO	Listening on 127.0.0.1:44791
+1627720916087	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilexvAJzu"
+[GFX1-]: glxtest: libpci missing
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libEGL missing
+1627720916812	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilexvAJzu/search.json.mozlz4", (void 0)))
+1627720918160	Marionette	INFO	Listening on port 39375
+1627720918211	Marionette	WARN	TLS certificate errors will be ignored for this session
+1627720923242	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:237:19
+TimedPromise@chrome://marionette/content/sync.js:222:10
+GeckoDriver.prototype.maximizeWindow@chrome://marionette/content/driver.js:2458:11
+1627720923632	geckodriver	INFO	Listening on 127.0.0.1:33425
+1627720924640	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilexw0Woi"
+[GFX1-]: glxtest: libpci missing
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libEGL missing
+1627720925102	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilexw0Woi/search.json.mozlz4", (void 0)))
+1627720926608	Marionette	INFO	Listening on port 45597
+1627720926674	Marionette	WARN	TLS certificate errors will be ignored for this session
+1627720931708	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:237:19
+TimedPromise@chrome://marionette/content/sync.js:222:10
+GeckoDriver.prototype.maximizeWindow@chrome://marionette/content/driver.js:2458:11
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+[Child 318, MediaDecoderStateMachine #1] WARNING: 7fe4645d6820 OpenCubeb() failed to init cubeb: file /build/firefox-v7rxi3/firefox-90.0+build1/dom/media/AudioStream.cpp:324
+[Child 318, MediaDecoderStateMachine #1] WARNING: Decoder=7fe44a703800 [OnMediaSinkAudioError]: file /build/firefox-v7rxi3/firefox-90.0+build1/dom/media/MediaDecoderStateMachine.cpp:3941
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+Gdk-Message: 08:43:12.138: firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1.
+
+Gdk-Message: 08:43:12.139: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1.
+
+Gdk-Message: 08:43:12.140: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1.
+
+Gdk-Message: 08:43:12.141: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1.
+
+Gdk-Message: 08:43:12.143: firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1.
+
+Exiting due to channel error.
+Exiting due to channel error.
+1627721008094	geckodriver	INFO	Listening on 127.0.0.1:40129
+1627721008099	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilejsinQR"
+[GFX1-]: glxtest: libpci missing
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libEGL missing
+1627721008827	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilejsinQR/search.json.mozlz4", (void 0)))
+1627721010196	Marionette	INFO	Listening on port 34021
+1627721010233	Marionette	WARN	TLS certificate errors will be ignored for this session
+1627721015272	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:237:19
+TimedPromise@chrome://marionette/content/sync.js:222:10
+GeckoDriver.prototype.maximizeWindow@chrome://marionette/content/driver.js:2458:11
+1627721015798	geckodriver	INFO	Listening on 127.0.0.1:48811
+1627721016802	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile5IG3lK"
+[GFX1-]: glxtest: libpci missing
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libEGL missing
+1627721017229	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile5IG3lK/search.json.mozlz4", (void 0)))
+1627721018650	Marionette	INFO	Listening on port 40985
+1627721018733	Marionette	WARN	TLS certificate errors will be ignored for this session
+1627721023768	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:237:19
+TimedPromise@chrome://marionette/content/sync.js:222:10
+GeckoDriver.prototype.maximizeWindow@chrome://marionette/content/driver.js:2458:11
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://rtb.gumgum.com/usync/amzns2s?r=https%3A%2F%2Fs.amazon-adsystem.com%2Fdcm%3Fpid%3D1d602ef3-e6a6-4fad-b208-3ada49c66ebc%26id%3D, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+Gdk-Message: 08:44:44.236: firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1.
+
+Gdk-Message: 08:44:44.236: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1.
+
+Gdk-Message: 08:44:44.237: firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1.
+
+Sandbox: Unexpected EOF, op 0 flags 02000000 path /etc/localtime
+Gdk-Message: 08:44:44.238: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1.
+
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1627721419544	geckodriver	INFO	Listening on 127.0.0.1:42703
+1627721419549	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilehuJLrI"
+[GFX1-]: glxtest: libpci missing
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libEGL missing
+1627721420285	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilehuJLrI/search.json.mozlz4", (void 0)))
+1627721421715	Marionette	INFO	Listening on port 41531
+1627721421778	Marionette	WARN	TLS certificate errors will be ignored for this session
+1627721426819	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:237:19
+TimedPromise@chrome://marionette/content/sync.js:222:10
+GeckoDriver.prototype.maximizeWindow@chrome://marionette/content/driver.js:2458:11
+1627721427268	geckodriver	INFO	Listening on 127.0.0.1:38223
+1627721427273	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileFhMjF4"
+[GFX1-]: glxtest: libpci missing
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libEGL missing
+1627721427699	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileFhMjF4/search.json.mozlz4", (void 0)))
+1627721429250	Marionette	INFO	Listening on port 40131
+1627721429307	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 111, MediaDecoderStateMachine #1] WARNING: 7f728f374ac0 OpenCubeb() failed to init cubeb: file /build/firefox-v7rxi3/firefox-90.0+build1/dom/media/AudioStream.cpp:324
+[Child 111, MediaDecoderStateMachine #1] WARNING: Decoder=7f72911b3800 [OnMediaSinkAudioError]: file /build/firefox-v7rxi3/firefox-90.0+build1/dom/media/MediaDecoderStateMachine.cpp:3941
+1627721434357	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:237:19
+TimedPromise@chrome://marionette/content/sync.js:222:10
+GeckoDriver.prototype.maximizeWindow@chrome://marionette/content/driver.js:2458:11
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+Gdk-Message: 08:51:34.851: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1.
+
+Gdk-Message: 08:51:34.851: firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1.
+
+Gdk-Message: 08:51:34.852: firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1.
+
+Sandbox: Unexpected EOF, op 0 flags 02000000 path /etc/localtime
+Exiting due to channel error.
+Gdk-Message: 08:51:34.852: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1.
+
+1627721654485	geckodriver	INFO	Listening on 127.0.0.1:55619
+1627721654491	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileBlI60L"
+[GFX1-]: glxtest: libpci missing
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libEGL missing
+1627721655205	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileBlI60L/search.json.mozlz4", (void 0)))
+1627721656576	Marionette	INFO	Listening on port 35747
+1627721656626	Marionette	WARN	TLS certificate errors will be ignored for this session
+1627721661661	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:237:19
+TimedPromise@chrome://marionette/content/sync.js:222:10
+GeckoDriver.prototype.maximizeWindow@chrome://marionette/content/driver.js:2458:11
+1627721662104	geckodriver	INFO	Listening on 127.0.0.1:43819
+1627721663109	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilegPfR2Q"
+[GFX1-]: glxtest: libpci missing
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libEGL missing
+1627721663507	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilegPfR2Q/search.json.mozlz4", (void 0)))
+1627721665143	Marionette	INFO	Listening on port 42291
+1627721665243	Marionette	WARN	TLS certificate errors will be ignored for this session
+1627721670259	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:237:19
+TimedPromise@chrome://marionette/content/sync.js:222:10
+GeckoDriver.prototype.maximizeWindow@chrome://marionette/content/driver.js:2458:11
+JavaScript error: https://rtb.gumgum.com/usync/amzns2s?r=https%3A%2F%2Fs.amazon-adsystem.com%2Fdcm%3Fpid%3D1d602ef3-e6a6-4fad-b208-3ada49c66ebc%26id%3D, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+[Child 111, MediaDecoderStateMachine #1] WARNING: 7fcc39e07580 OpenCubeb() failed to init cubeb: file /build/firefox-v7rxi3/firefox-90.0+build1/dom/media/AudioStream.cpp:324
+[Child 111, MediaDecoderStateMachine #1] WARNING: Decoder=7fcc4bb71c00 [OnMediaSinkAudioError]: file /build/firefox-v7rxi3/firefox-90.0+build1/dom/media/MediaDecoderStateMachine.cpp:3941
+1627721847511	geckodriver	INFO	Listening on 127.0.0.1:60101
+1627721847517	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileJOVKVn"
+[GFX1-]: glxtest: libpci missing
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libEGL missing
+1627721848238	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileJOVKVn/search.json.mozlz4", (void 0)))
+1627721849627	Marionette	INFO	Listening on port 37657
+1627721849751	Marionette	WARN	TLS certificate errors will be ignored for this session
+1627721854784	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:237:19
+TimedPromise@chrome://marionette/content/sync.js:222:10
+GeckoDriver.prototype.maximizeWindow@chrome://marionette/content/driver.js:2458:11
+1627721855235	geckodriver	INFO	Listening on 127.0.0.1:53917
+1627721855246	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile3PqCrH"
+[GFX1-]: glxtest: libpci missing
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libEGL missing
+1627721855671	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile3PqCrH/search.json.mozlz4", (void 0)))
+1627721857267	Marionette	INFO	Listening on port 37875
+1627721857375	Marionette	WARN	TLS certificate errors will be ignored for this session
+1627721862414	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:237:19
+TimedPromise@chrome://marionette/content/sync.js:222:10
+GeckoDriver.prototype.maximizeWindow@chrome://marionette/content/driver.js:2458:11
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+[Child 112, MediaDecoderStateMachine #1] WARNING: 7f5dedbfee40 OpenCubeb() failed to init cubeb: file /build/firefox-v7rxi3/firefox-90.0+build1/dom/media/AudioStream.cpp:324
+[Child 112, MediaDecoderStateMachine #1] WARNING: Decoder=7f5de10e8800 [OnMediaSinkAudioError]: file /build/firefox-v7rxi3/firefox-90.0+build1/dom/media/MediaDecoderStateMachine.cpp:3941
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+Gdk-Message: 08:58:42.971: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1.
+
+Gdk-Message: 08:58:42.971: firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1.
+
+Gdk-Message: 08:58:42.972: firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1.
+
+Sandbox: Unexpected EOF, op 0 flags 02000000 path /etc/localtime
+Gdk-Message: 08:58:42.973: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1.
+
+Exiting due to channel error.
+Sandbox: Unexpected EOF, op 0 flags 02000000 path /etc/localtime
+Gdk-Message: 08:58:42.972: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1.
+

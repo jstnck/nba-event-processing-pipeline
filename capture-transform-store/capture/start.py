@@ -5,13 +5,11 @@ import time, concurrent.futures
 import selenium_video
 import ffmpeg_screen_capture 
 import subprocess
-
-
-subprocess.run(["touch", "/videos/testfile"])
+# import logging
 
 
 # transform needs to be set up first
-time.sleep(5)
+# time.sleep(60)
 
 # create and start virtual display
 virtual_display, capture_dimensions, display_number = ffmpeg_screen_capture.create_virtual_display()
@@ -24,7 +22,13 @@ start_time = time.perf_counter()
 # source_url = "http://34.231.243.220:8080/"
 source_url = "https://time.is"
 
+# logging.info(source_url)
+
 selenium_video.start_video(source_url)
+
+
+print(display_number)
+
 
 with concurrent.futures.ThreadPoolExecutor() as executor:
     
@@ -38,6 +42,8 @@ with concurrent.futures.ThreadPoolExecutor() as executor:
 
 finish_time = time.perf_counter()
 print(f"Finished in {round(finish_time-start_time, 2)} second(s)")
+
+time.sleep(60)
 
 virtual_display.stop()
 
