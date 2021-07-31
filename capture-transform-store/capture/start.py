@@ -12,7 +12,7 @@ import subprocess
 # time.sleep(60)
 
 # create and start virtual display
-virtual_display, capture_dimensions, display_number = ffmpeg_screen_capture.create_virtual_display()
+virtual_display, capture_dimensions, display_number = ffmpeg_screen_capture.create_virtual_display(width=960, height=720)
 
 capture_time = 60
 

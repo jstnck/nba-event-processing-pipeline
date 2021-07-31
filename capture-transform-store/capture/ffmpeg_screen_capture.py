@@ -57,11 +57,11 @@ def capture_screen(
 
     print(ffmpeg_cmd)
     # logging.info(ffmpeg_cmd)
-    # p1 = subprocess.run(ffmpeg_cmd, shell=True, capture_output=True, text=True)
-    print(subprocess.run(ffmpeg_cmd, shell=True, capture_output=True, text=True))
+    p1 = subprocess.run(ffmpeg_cmd, shell=True, capture_output=True, text=True)
+    # print(subprocess.run(ffmpeg_cmd, shell=True, capture_output=True, text=True))
     
-    return 
-    # return p1.returncode
+    # return 
+    return p1.returncode
 
 
 if __name__ == "__main__":

@@ -50,9 +50,12 @@ def create_frame_data(file_path: str, connection, table: str):
             # add metadata and frame data to a tuple for insertion into postgres
             data_tuple = (file_name, fps, frame_count, encoded_np_data)
            
+            # json_ex = json.dumps({"test1": "test1"})
             # create the insert query structure
             insert_query = (
+                # f"INSERT INTO {table} (file_name, fps, frame_num, frame_array) VALUES ('{file_name}', {fps}, {frame_count}, '{json_ex}')"
                 f"INSERT INTO {table} (file_name, fps, frame_num, frame_array) VALUES ('{file_name}', {fps}, {frame_count}, '{encoded_np_data}')"
+
             )
 
             # insert single frame data into row in postgres db

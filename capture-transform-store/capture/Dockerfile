@@ -27,6 +27,9 @@ RUN pip3 install selenium pyvirtualdisplay pillow
 RUN chown -R user:user /capture
 RUN chmod 755 /capture
 
+# RUN chown -R user:user /videos
+# RUN chmod 755 /videos
+
 USER user
 # RUN cd /capture
 
