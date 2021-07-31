@@ -56,11 +56,9 @@ def create_frame_data(file_path: str, connection, table: str):
             )
 
             # insert single frame data into row in postgres db
-            db.insert_query(connection, insert_query, record)
+            db.insert_query(connection, insert_query)
 
     return "video processed and frame data added to database"
-
-
 
 
 if __name__ == "__main__":

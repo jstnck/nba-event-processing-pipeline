@@ -20,7 +20,7 @@ def create_connection(db_host: str, db_user: str, db_password: str, db_port: int
         return (e)
 
 
-def insert_query(connection, query, records):
+def insert_query(connection, query):
     """ inserts a single row into mysql """
     try:
         connection.reconnect()
